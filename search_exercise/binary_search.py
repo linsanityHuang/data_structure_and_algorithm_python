@@ -5,7 +5,6 @@ def binary_search(input_array, target):
 	n = len(input_array)
 	if n == 0:
 		return -1
-	
 	low = 0
 	high = n-1
 	while low <= high:
@@ -20,8 +19,7 @@ def binary_search(input_array, target):
 
 
 if __name__ == '__main__':
-	np.random.seed(1)
-	input_array = np.random.randint(1, 100, 10)
-	input_array = sorted(input_array)
+	input_array = [34, 49, 74, 91, 95]
 	print(input_array)
-	print(binary_search(input_array, target=9))
+	target = int(input('target: '))
+	print(binary_search(input_array, target))

@@ -14,8 +14,6 @@ def bubble_sort(input_array):
 
 
 if __name__ == '__main__':
-	input_array = np.random.randint(1, 100, 5)
+	input_array = np.random.randint(1, 100, 10)
 	print(input_array)
 	print(bubble_sort(input_array))
-	
-	
